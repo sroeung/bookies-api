@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Book.create(title: 'Auto Repair For Dummies', author: 'Deanna Sclar', isbn_number: '978-0-7645-9902-6', description: 'Get the confidence and know-how you need to fix and maintain your vehicle like a pro!')
