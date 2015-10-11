@@ -3,7 +3,7 @@ module Api
     class BooksController < ApplicationController
       def index
         @books = Book.all
-        render json: ActiveModel::ArraySerializer.new(@books, each_serializer: Api::V1::BookSerializer)
+        render json: ActiveModel::ArraySerializer.new(@books, each_serializer: Api::V1::BookSerializer, root: :books)
       end
     end
   end
